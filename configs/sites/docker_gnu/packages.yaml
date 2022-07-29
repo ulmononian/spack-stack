@@ -2,7 +2,7 @@ packages:
   all:
     compiler:: [gcc@9.3]
     providers:
-      mpi:: [openmpi@4.0.4]
+      mpi:: [openmpi@4.0.3]
 
 ### MPI, Python, MKL
   mpi:
