@@ -30,7 +30,7 @@ packages:
   openmpi:
     externals: 
     - spec: openmpi@4.0.3 #%gcc@10.3.0~cuda~cxx~cxx_exceptions~java~memchecker+pmi~static~wrapper-rpath fabrics=ucx schedulers=slurm,tm
-      prefix: /usr/bin
+      prefix: /usr
       modules:
       - openmpi/4.0.3
   #python:
