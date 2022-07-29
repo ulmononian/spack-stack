@@ -16,15 +16,10 @@ packages:
   python:
     buildable: False
     externals:
-    - spec: python@3.9.7
-      prefix: /work/noaa/da/jedipara/spack-stack/miniconda-3.9.7
+    - spec: python@3.8.10
+      prefix: /home/builder/miniconda-4.12.0
       modules:
-      - miniconda/3.9.7
-
-### Modifications of common packages
-  # Versions 1.73+ don't compile on orion (bootstrap.sh fails)
-  boost:
-    version:: [1.72.0]
+      - miniconda/3.8.10
 
 ### All other external packages listed alphabetically
   autoconf:
