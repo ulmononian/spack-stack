@@ -6,9 +6,9 @@ packages:
       #mpi:: [intel-oneapi-mpi@2021.5.1]
       mpi:: [openmpi@4.0.3]
 
-### MPI, Python, MKL
-  #mpi:
-    #buildable: False
+## MPI, Python, MKL
+  mpi:
+    buildable: False
   #intel-oneapi-mpi:
     #externals:
     #- spec: intel-oneapi-mpi@2021.5.1%intel@2022.0.2

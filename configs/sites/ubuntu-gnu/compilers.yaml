@@ -7,9 +7,13 @@ compilers::
         f77: /usr/bin/gfortran-10
         fc: /usr/bin/gfortran-10
       flags: {}
-      operating_system: sles12
-      target: x86_64
+      operating_system: ubuntu20.04
+      target: any
       modules:
       - gnu/10
-      environment: {}
+      environment:
+        prepend_path:
+          PATH: '/usr/bin'
+          LD_LIBRARY_PATH: '/usr/lib64'
+          CPATH: '/usr/include'
       extra_rpaths: []
