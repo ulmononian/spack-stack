@@ -1,6 +1,6 @@
 packages:
   all:
-    compiler:: [gcc@10.1.0]
+    compiler:: [gcc@9.3]
     providers:
       mpi:: [openmpi@4.0.3]
 
