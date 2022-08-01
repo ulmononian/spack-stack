@@ -10,7 +10,7 @@ compilers:
       operating_system: ubuntu20.04
       target: any
       modules:
-      - gcc/10
+      - gcc/9
       environment:
         prepend_path:
           PATH: '/usr/bin'
