@@ -1,16 +1,16 @@
 compilers:
   - compiler:
-      spec: gcc@9
+      spec: gcc@10
       paths:
-        cc: /usr/bin/gcc-9
-        cxx: /usr/bin/g++-9
-        f77: /usr/bin/gfortran-9
-        fc: /usr/bin/gfortran-9
+        cc: /usr/bin/gcc-10
+        cxx: /usr/bin/g++-10
+        f77: /usr/bin/gfortran-10
+        fc: /usr/bin/gfortran-10
       flags: {}
       operating_system: ubuntu20.04
       target: any
       modules:
-      - gcc/9
+      - gcc/10
       environment:
         prepend_path:
           PATH: '/usr/bin'
