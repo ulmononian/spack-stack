@@ -38,12 +38,6 @@ packages:
     externals:
     - spec: bzip2@1.0.8
       prefix: /usr
-  cmake:
-    externals:
-    - spec: cmake@3.22.5
-      prefix: /usr/local
-      modules:
-      - cmake/3.22.5
   curl:
     externals:
     - spec: curl@7.68.0+gssapi+ldap+nghttp2
