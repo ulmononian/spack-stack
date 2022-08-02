@@ -1,6 +1,6 @@
 compilers:
   - compiler:
-      spec: gcc@9
+      spec: gcc@9.4.0
       paths:
         cc: /usr/bin/gcc-9
         cxx: /usr/bin/g++-9
@@ -10,7 +10,7 @@ compilers:
       operating_system: ubuntu20.04
       target: any
       modules:
-      - gcc/9
+      - gcc/9.4.0
       environment:
         prepend_path:
           PATH: '/usr/bin'
