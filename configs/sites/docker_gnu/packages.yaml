@@ -40,14 +40,10 @@ packages:
       prefix: /usr
   cmake:
     externals:
-    - spec: cmake@3.22.1
-      prefix: /apps/cmake-3.22.1
+    - spec: cmake@3.22.5
+      prefix: /usr
       modules:
-      - cmake/3.22.1
-    - spec: cmake@3.18.1
-      prefix: /apps/cmake-3.18.1
-      modules:
-      - cmake/3.18.1
+      - cmake/3.22.5
   curl:
     externals:
     - spec: curl@7.68.0+gssapi+ldap+nghttp2
