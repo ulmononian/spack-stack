@@ -41,7 +41,7 @@ packages:
   cmake:
     externals:
     - spec: cmake@3.22.5
-      prefix: /usr/local/bin
+      prefix: /usr/local
       modules:
       - cmake/3.22.5
   curl:
