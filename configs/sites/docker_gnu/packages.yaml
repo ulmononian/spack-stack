@@ -11,15 +11,13 @@ packages:
     externals:
     - spec: openmpi@4.0.3
       prefix: /usr
-      modules:
-      - openmpi/4.0.3
+      modules: []
   python:
     buildable: False
     externals:
     - spec: python@3.8.10
       prefix: /home/builder/miniconda-4.12.0
-      modules:
-      - miniconda/3.8.10
+      modules: []
 
 ### All other external packages listed alphabetically
   autoconf:
