@@ -18,13 +18,10 @@ spack:
   include: []
 
   concretizer:
-    unify: true
+    unify: when_possible
 
   specs:
-  - jasper@2.0.25
-  - zlib@1.2.11
-  - libpng@1.6.37
-  - hdf5@1.10.6
-  - netcdf-c@4.7.4
+  - mapl@2.22.0
+  - bufr@11.7.0
  
   
