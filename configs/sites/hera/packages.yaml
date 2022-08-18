@@ -112,6 +112,7 @@ packages:
     externals:
     - spec: git@2.18.0+tcltk
       prefix: /usr
+    buildable: False
   git-lfs:
     externals:
     - spec: git-lfs@2.10.0
