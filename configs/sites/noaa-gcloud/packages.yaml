@@ -31,6 +31,10 @@ packages:
     externals:
     - spec: berkeley-db@5.3.21
       prefix: /usr
+  cmake:
+    externals:
+    - spec: cmake@3.20.1
+      prefix: /apps/cmake/3.20.1
   cpio:
     externals:
     - spec: cpio@2.11
@@ -57,8 +61,9 @@ packages:
       prefix: /usr
   git:
     externals:
-    - spec: git@1.8.3.1~tcltk
-      prefix: /usr
+    - spec: git@2.28.0
+      prefix: /contrib/EPIC/bin
+    buildable: False
   git-lfs:
     externals:
     - spec: git-lfs@3.1.2

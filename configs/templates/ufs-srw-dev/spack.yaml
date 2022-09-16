@@ -1,3 +1,5 @@
+# spack-stack hash: 1ccfc60
+# spack hash: 2a53df814b
 spack:
   config:
     install_tree:
@@ -10,17 +12,16 @@ spack:
         tcl: $env/install/modulefiles
       lmod:
         projections:
-          parallelio: 'pio/{version}'
-      tcl: 
+          parallelio: pio/{version}
+      tcl:
         projections:
           parallelio: '{^mpi.name}/{^mpi.version}/{compiler.name}/{compiler.version}/pio/{version}'
-
   view: false
-  include: []
-
+  include:
+  - site
+  - common
   concretizer:
-    unify: true
-
+    unify: when_possible
   specs:
   - jasper@2.0.25
   - zlib@1.2.11
@@ -31,7 +32,7 @@ spack:
   - parallelio@2.5.3
   - esmf@8.3.0b09
   - fms@2022.01
-  - bufr@11.7.1
+  - bufr@11.7.0
   - bacio@2.4.1
   - crtm@2.3.0
   - g2@3.4.5
@@ -48,4 +49,5 @@ spack:
   - wgrib2@2.0.8
   - wrf-io@1.2.0
   - ncio@1.1.2
-  
+  - curl@7.83.0
+
