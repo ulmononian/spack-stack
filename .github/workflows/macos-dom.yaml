@@ -13,7 +13,7 @@ on:
       template:
         description: 'Base spack.yaml template. Default is a complete JEDI-UFS environment.'
         required: true
-        default: 'jedi-ufs-all'
+        default: 'skylab-dev'
       specs:
         description: 'Which specs to add to the template. Default is none (empty string).'
         required: false
@@ -38,17 +38,20 @@ jobs:
       - name: create-env
         run: |
           source ./setup.sh
-          spack stack create env --site macos.default --template ${{ inputs.template || 'jedi-ufs-all' }} --name ${{ inputs.template || 'jedi-ufs-all' }}.macos-dom
-          spack env activate -d envs/${{ inputs.template || 'jedi-ufs-all' }}.macos-dom
+          spack stack create env --site macos.default --template ${{ inputs.template || 'skylab-dev' }} --name ${{ inputs.template || 'skylab-dev' }}.macos-dom
+          spack env activate -d envs/${{ inputs.template || 'skylab-dev' }}.macos-dom
           spack add ${{ inputs.specs || '' }}
 
           spack external find
           spack external find perl
-          spack external find python@3
+          spack external find python
           spack external find wget
-          PATH="/usr/local/opt/qt@5/bin:${PATH}" spack external find qt@5
+          PATH="/usr/local/opt/qt@5/bin:${PATH}" spack external find qt
           PATH="/usr/local/opt/curl/bin:${PATH}" spack external find curl
           spack compiler find
+
+          ## https://github.com/dtcenter/MET/issues/2239
+          #spack remove global-workflow-env
 
           spack concretize
           spack install --fail-fast
