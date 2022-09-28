@@ -47,7 +47,7 @@
       version: [1.19.0]
       variants: linalg=eigen,lapack compression=lz4,bzip2
     ecmwf-atlas:
-      version: [0.29.0]
+      version: [0.30.0]
       variants: +fckit +trans
     ectrans:
       version: [develop]
@@ -94,7 +94,7 @@
     grib-util:
       version: [1.2.3]
     gsibec:
-      version: [1.0.2]
+      version: [1.0.5]
     gsl-lite:
       version: [0.37.0]
     hdf:
@@ -110,7 +110,7 @@
     jasper:
       version: [2.0.32]
     jedi-cmake:
-      version: [1.3.0]
+      version: [1.4.0]
     jpeg:
       version: [9.1.0]
     landsfcutil:
@@ -131,6 +131,8 @@
     nco:
       version: [5.0.6]
       variants: ~doc
+    # ncview - when adding information here, also check Orion
+    # and Discover site configs
     nemsio:
       version: [2.5.2]
     nemsiogfs:
@@ -146,6 +148,8 @@
       version: [4.3.1]
     netcdf-fortran:
       version: [4.5.4]
+    # ninja - when adding information here, also check Cheyenne
+    # and Discover site configs
     nlohmann-json:
       version: [3.10.5]
     nlohmann-json-schema-validator:
