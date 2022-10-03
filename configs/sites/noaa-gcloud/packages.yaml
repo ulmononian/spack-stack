@@ -11,6 +11,18 @@ packages:
       prefix: /apps/oneapi
       modules:
       - impi/2021.3.0
+  intel-mpi:
+    externals:
+    - spec: intel-mpi@2018.4.274%intel@18.0.5
+      prefix: /apps/intel/compilers_and_libraries_2018
+      modules:
+      - impi/2018.4.274
+  openmpi:
+    externals:
+    - spec: openmpi@3.1.4%gcc@9.2.0
+      prefix: /apps/openmpi/3.1.4/gnu/gcc-9.2.0
+      modules:
+      - openmpi/3.1.4
   bash:
     externals:
     - spec: bash@4.2.46
