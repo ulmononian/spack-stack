@@ -35,6 +35,10 @@ packages:
     externals:
     - spec: cpio@2.11
       prefix: /usr
+  curl:
+    externals:
+    - spec: curl@7.85.0
+      prefix: /contrib/EPIC/bin
   diffutils:
     externals:
     - spec: diffutils@3.3
@@ -62,7 +66,7 @@ packages:
     buildable: False
   git-lfs:
     externals:
-    - spec: git-lfs@2.13.3
+    - spec: git-lfs@3.2.0
       prefix: /contrib/EPIC/miniconda3/4.12.0
   gmake:
     externals:
