@@ -51,5 +51,3 @@ spack:
   - wgrib2@2.0.8
   - wrf-io@1.2.0
   - ncio@1.1.2
-  - met@10.1.0
-  - metplus@4.1.0
