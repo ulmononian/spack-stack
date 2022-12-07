@@ -29,7 +29,7 @@ spack:
   - hdf5@1.10.6
   - netcdf-c@4.7.4+mpi~parallel-netcdf
   - netcdf-fortran@4.5.4
-  - parallelio@2.5.3~shared~pnetcdf
+  - parallelio@2.5.7~shared~pnetcdf
   - esmf@8.3.0b09
   - fms@2022.01
   - bacio@2.4.1
